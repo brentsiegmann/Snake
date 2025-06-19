@@ -1,0 +1,50 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.grid {
+  display: grid; /* activeer grid layout */
+  grid-template-columns: repeat(17, 0fr); /* 2 kolommen van gelijke grootte */
+  background: lightgray;
+  width: fit-content;
+  border: solid rgb(39, 38, 38), 5px;
+  border-radius: 5px;
+}
+
+.grid > div {
+  height: 30px;
+  width: 30px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.even {
+  background: rgb(14, 224, 101);
+}
+
+.oneven {
+  background-color: rgb(6, 155, 6);
+}
+
+.eyes {
+  gap: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.eye {
+  justify-content: center;
+  align-items: center;
+  height: 8.5px;
+  width: 8.5px;
+  border-radius: 50%;
+  background-color: white;
+}
